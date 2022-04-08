@@ -1,0 +1,16 @@
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container__fluid {
+	min-width: 1440px;
+	margin: 0 auto;
+	padding: none;
+}
+// VARIABLES
+$accent-color: #F78434;
+$accent-color-hover: #ef690a;
