@@ -1,8 +1,9 @@
 .clients {
-	padding: 100px 0 90px 0;
+	padding: 100px 0 0 0;
 
 	&__row {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}

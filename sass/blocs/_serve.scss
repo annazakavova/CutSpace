@@ -1,0 +1,88 @@
+.serve {
+	position: relative;
+	padding-bottom: 120px;
+	z-index: 1;
+	padding: 100px 0 0 0;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		top: -35%;
+		bottom: 45px;
+		background-color: #F5F6FA;
+	}
+	&__text {
+		margin-bottom: 45px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		column-gap: 30px;
+		color: #323232;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		background-color: #fff;
+		box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+		border-radius: 10px;
+		padding: 40px 88px;
+		text-align: center;
+
+		transition: background-color 0.3s ease-in, color 0.3s ease-in;
+
+		.serve__card-icon {
+			fill: #F78434;
+			transition: fill 0.3s ease-in;
+			margin-bottom: 15px;
+		}
+
+		&:hover {
+			background-color: #F78434;
+			color: #fff;
+
+			.serve__card-icon {
+				fill: #fff;
+			}
+
+			.button {
+				background-color: #fff;
+				color: #F78434;;
+			}
+		}
+	}
+
+	&__card-title {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 150%;
+		letter-spacing: 0.8px;
+	}
+
+	&__card-subtitle {
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+		margin-bottom: 25px;
+	}
+}

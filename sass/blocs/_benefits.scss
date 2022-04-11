@@ -1,0 +1,59 @@
+.benefits {
+	padding-top: 110px;
+
+	&__text {
+		padding-bottom: 58px;
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 2px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		column-gap: 35px;
+	}
+
+	&__item svg {
+		margin-bottom: 15px;
+		display: inline-block;
+
+		circle {
+			fill: rgba(88, 190, 191, 0.2);
+			transition: fill 0.3s ease-in;
+		}
+		path, ellipse {
+			fill: #58BEBF;
+			transition: fill 0.3s ease-in;
+		}
+
+		&:hover {
+			circle {
+				fill: #F78434;
+			}
+			path, ellipse {
+				fill: #fff;
+			}
+		}
+	}
+
+	&__item-subtitle {
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+		color: #323232;
+		margin-bottom: 111px;
+	}
+}
+.benedits {
+
+	&__item-title {
+		font-size: 28px;
+		line-height: 42px;
+		letter-spacing: 0.5px;
+		color: #323232;
+	}
+}
