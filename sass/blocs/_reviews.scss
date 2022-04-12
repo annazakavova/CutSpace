@@ -1,0 +1,128 @@
+.reviews {
+	padding-top: 60px;
+
+	&__text {
+		margin-bottom: 60px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		max-width: 453px;
+	}
+
+	&__subtitle {
+		max-width: 398px;
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+		color: #606060;
+	}
+	&__card {}
+}
+.card {
+	display: inline-block;
+	border-radius: 5px;
+	overflow: hidden;
+	max-width: 350px;
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: -40px;
+			top: -40px;
+			width: 80px;
+			height: 80px;
+			background-image: url(../../img/reviews/5.svg);
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__item {
+		transition: box-shadow 0.3s ease-in;
+
+		&:hover {
+			box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+		}
+	}
+
+	&__item-picture {
+		position: relative;
+
+		.card__item-picture-play {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			transform: translateY(30%);
+			opacity: 0;
+			transition: transform 0.1s ease-in, opacity 0.1s ease-in;
+
+			.card__item:hover & {
+				transform: translateY(0%);
+				opacity: 1;
+			}
+		}
+	}
+
+	&__item-text {
+		padding: 31px 29px 0 29px;
+		max-width: 350px;
+	}
+
+	&__item-title {
+		margin-bottom: 23px;
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+		color: #323232;
+	}
+
+	&__item-name {
+		margin-bottom: 1px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 150%;
+		letter-spacing: 0.6px;
+	}
+
+	&__item-city {
+		margin-bottom: 31px;
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+		color: #58BEBF;
+		transition: color 0.3s ease-in;
+
+		.card__item:hover & {
+			color: #F78434;
+		}
+	}
+}
+
+.card__item-picture-play-icon {
+	circle {
+		fill: #fff;
+		transition: fill 0.3s ease-in;
+	}
+	path {
+		fill: $accent-color;
+		transition: fill 0.3s ease-in;
+	}
+
+	&:hover {
+			circle {
+				fill: $accent-color;
+				transition: fill 0.3s ease-in;
+			}
+			
+			path {
+				fill: #fff;
+				transition: fill 0.3s ease-in;
+			}
+	}
+}

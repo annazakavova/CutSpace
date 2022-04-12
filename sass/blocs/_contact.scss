@@ -1,0 +1,44 @@
+.contact {
+	position: relative;
+	padding-top: 200px;
+	background-image: url(../../img/contact/1.svg);
+	background-size: cover;
+	padding-bottom: 55px;
+	color: #ffff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		display: block;
+		width: 743px;
+		height: 372px;
+		background-image: url(../../img/contact/2.svg);
+		background-size: initial;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		left: 50%;
+		display: block;
+		width: 478px;
+		height: 547px;
+		margin-left: 79px;
+		background-image: url(../../img/contact/3.png);
+		background-size: initial;
+	}
+	&__info-title {
+		color: #ffff;
+		margin-bottom: 15px;
+		max-width: 359px;
+	}
+
+	&__info-subtitle {
+		max-width: 330px;
+		margin-bottom: 30px;
+		line-height: 168.75%;
+		letter-spacing: 1.15px;
+	}
+}
